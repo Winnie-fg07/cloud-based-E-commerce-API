@@ -5,12 +5,16 @@ from typing import Optional
 from fastapi import Depends, HTTPException
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from passlib.context import CryptContext
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
 security = HTTPBearer()
 
-SECRET_KEY = "secret@key54321"
-ALGORITHM = "HS256"
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGORITHM")
+
 
 def create_token(username: str):
     payload = {
