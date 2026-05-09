@@ -133,7 +133,7 @@ http://winnie-cloud-ecommerce-api.s3-website.eu-north-1.amazonaws.com
 
 GitHub Repository Link:
 
-https://github.com/Winnie-fg07/shedev-waw-2026-assistant.git
+https://github.com/Winnie-fg07/cloud-based-E-commerce-API.git
 
 ---
 
